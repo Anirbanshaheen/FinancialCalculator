@@ -198,30 +198,29 @@
                 android:layout_marginStart="33dp"
                 android:layout_marginEnd="33dp">
 
-                <TextView
-                    android:id="@+id/totalInterest"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="@font/poppins_light"
-                    android:text="Total Interest payble"
-                    android:textColor="#505050"
-                    android:textSize="16sp" />
+<!--                <TextView-->
+<!--                    android:id="@+id/totalInterest"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentTop="true"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:fontFamily="@font/poppins_light"-->
+<!--                    android:text="Total Interest payble"-->
+<!--                    android:textColor="#505050"-->
+<!--                    android:textSize="16sp" />-->
 
-                <TextView
-                    android:id="@+id/textView_interestPayble"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBaseline="@id/totalInterest"
-                    android:layout_alignParentRight="true"
-                    android:textSize="16sp" />
+<!--                <TextView-->
+<!--                    android:id="@+id/textView_interestPayble"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignBaseline="@id/totalInterest"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:textSize="16sp" />-->
 
                 <TextView
                     android:id="@+id/totalPrincipal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/totalInterest"
                     android:layout_marginTop="5dp"
                     android:fontFamily="@font/poppins_light"
                     android:text="Total Principal"
@@ -236,24 +235,24 @@
                     android:layout_alignParentRight="true"
                     android:textSize="16sp" />
 
-                <TextView
-                    android:id="@+id/totalPayment"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/totalPrincipal"
-                    android:layout_marginTop="5dp"
-                    android:fontFamily="@font/poppins_light"
-                    android:text="Total Payment"
-                    android:textColor="#505050"
-                    android:textSize="16sp" />
+<!--                <TextView-->
+<!--                    android:id="@+id/totalPayment"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/totalPrincipal"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:fontFamily="@font/poppins_light"-->
+<!--                    android:text="Total Payment"-->
+<!--                    android:textColor="#505050"-->
+<!--                    android:textSize="16sp" />-->
 
-                <TextView
-                    android:id="@+id/textView_payment"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBaseline="@id/totalPayment"
-                    android:layout_alignParentRight="true"
-                    android:textSize="16sp" />
+<!--                <TextView-->
+<!--                    android:id="@+id/textView_payment"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignBaseline="@id/totalPayment"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:textSize="16sp" />-->
 
             </RelativeLayout>
 

@@ -74,7 +74,6 @@ public class Fragment_fixed extends Fragment {
                 value = 2;
                 imageViewYear.setVisibility(View.INVISIBLE);
                 imageViewMonth.setVisibility(View.VISIBLE);
-
                 editTextLoanTenure.getText().clear();
             }
         });
@@ -100,7 +99,7 @@ public class Fragment_fixed extends Fragment {
                     showCustomToast();
 
                 } else if(value == 1) {
-
+                    // for year
                     principal = Double.valueOf(principalAmount);
                     interest = (Double.valueOf(interestRate)) / 100;
                     tenure = Double.valueOf(loanTenure);
@@ -112,7 +111,7 @@ public class Fragment_fixed extends Fragment {
                     textViewResult.setText(String.format("%.2f", calculate));
 
                 } else if(value == 2) {
-
+                    // for month
                     double principal = Double.valueOf(principalAmount);
                     double interest = (Double.valueOf(interestRate)) / 100;
                     double tenure = Double.valueOf(loanTenure) / 12;
