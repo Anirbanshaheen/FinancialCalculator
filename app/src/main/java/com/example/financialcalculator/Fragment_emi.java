@@ -2,6 +2,7 @@ package com.example.financialcalculator;
 
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -110,7 +111,7 @@ public class Fragment_emi extends Fragment {
 
                     calculate = (principal * interest * Math.pow((1 + interest), tenure)) / (Math.pow((1 + interest), tenure) - 1);
 
-                    textViewEmiPrincipal.setText(String.format("%.2f",principal));
+                    textViewEmiPrincipal.setText(String.format("%.2f", principal));
                     textViewEmiTotalPayment.setText(String.format("%.2f", calculate));
                 } else if (value == 2) {
                     // for month
@@ -120,7 +121,7 @@ public class Fragment_emi extends Fragment {
 
                     calculate = (principal * interest * Math.pow((1 + interest), tenure)) / (Math.pow((1 + interest), tenure) - 1);
 
-                    textViewEmiPrincipal.setText(String.format("%.2f",principal));
+                    textViewEmiPrincipal.setText(String.format("%.2f", principal));
                     textViewEmiTotalPayment.setText(String.format("%.2f", calculate));
                 }
             }
@@ -141,10 +142,17 @@ public class Fragment_emi extends Fragment {
         buttonEmiShareResult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent sharingIntent = new Intent(Intent.ACTION_SEND).putExtra("Interest",principal);
+                Intent sharingIntent = new Intent(Intent.ACTION_SEND).putExtra("Interest", principal);
+                sharingIntent.setData(Uri.parse("mailto"));
+                sharingIntent.putExtra(sharingIntent.EXTRA_SUBJECT, "Total Calculation");
+                sharingIntent.putExtra(sharingIntent.EXTRA_TEXT, );
                 sharingIntent.setType("text/plain");
+
+                if (sharingIntent.resolveActivity(getActivity().getPackageManager()) != null) {
+                    startActivity(Intent.createChooser(sharingIntent, "Share calculation"));
+                }
 //                sharingIntent.putExtra(Intent.EXTRA_SUBJECT,"Write your subject here");
-                startActivity(Intent.createChooser(sharingIntent,"Share calculation"));
+
             }
         });
 
