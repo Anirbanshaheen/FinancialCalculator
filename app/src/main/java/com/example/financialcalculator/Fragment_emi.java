@@ -145,7 +145,7 @@ public class Fragment_emi extends Fragment {
                 Intent sharingIntent = new Intent(Intent.ACTION_SEND).putExtra("Interest", principal);
                 sharingIntent.setData(Uri.parse("mailto"));
                 sharingIntent.putExtra(sharingIntent.EXTRA_SUBJECT, "Total Calculation");
-                sharingIntent.putExtra(sharingIntent.EXTRA_TEXT, );
+//                sharingIntent.putExtra(sharingIntent.EXTRA_TEXT, );
                 sharingIntent.setType("text/plain");
 
                 if (sharingIntent.resolveActivity(getActivity().getPackageManager()) != null) {
